@@ -41,23 +41,11 @@ public class Parallelepiped {
                 '}';
     }
     void area(){
-        System.out.println("Высота:");
-        setHeight( sc.nextDouble());
-        System.out.println("Длина:");
-        setLength(sc.nextDouble());
-        System.out.println("Ширина:");
-        setWidth(sc.nextDouble());
         double s=2*((getHeigth()*getLength())
                 +(getLength()*getWidth())+(getHeigth()*getWidth()));
         System.out.println("AREA "+s);
     }
     void volume(){
-        System.out.println("Высота:");
-        setHeight( sc.nextDouble());
-        System.out.println("Длина:");
-        setLength(sc.nextDouble());
-        System.out.println("Ширина:");
-        setWidth(sc.nextDouble());
         double v=(getHeigth()*getWidth()*getLength());
         System.out.println("Объём параллелопипеда равна "+v);
     }

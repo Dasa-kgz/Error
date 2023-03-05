@@ -2,41 +2,33 @@ import java.util.Scanner;
 
 public class Cylinder {
     Scanner sc = new Scanner(System.in);
-    private double r;
-    private double h;
+    private double radius;
+    private double height;
 
     public Cylinder(){
     }
 
-    public double getR() {
-        return r;
+    public double getRadius() {
+        return radius;
     }
 
-    public void setR(double r) {
-        this.r = r;
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
 
-    public double getH() {
-        return h;
+    public double getHeight() {
+        return height;
     }
 
-    public void setH(double h) {
-        this.h = h;
+    public void setHeight(double h) {
+        this.height = height;
     }
     void sCylinder(){
-        System.out.println("Высота:");
-        setH( sc.nextDouble());
-        System.out.println("Радиус:");
-        setR(sc.nextDouble());
-        double s=2*Math.PI*getR()*(getR()+getH());
+        double s=2*Math.PI*radius*(radius+height);
         System.out.println("Площадь цилиндра равна "+s);
     }
     void sVolume(){
-        System.out.println("Высота:");
-        setH( sc.nextDouble());
-        System.out.println("Радиус:");
-        setR(sc.nextDouble());
-        double v=(Math.PI*getR()+getR()+getH());
+        double v=(Math.PI*getRadius()+getRadius()+getHeight());
         System.out.println("Объём цилиндра равна "+v);
     }
 }
